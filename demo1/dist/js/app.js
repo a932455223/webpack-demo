@@ -63,34 +63,63 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = foo;
-/* unused harmony export bar */
-function foo() {
-  return 'foo';
-}
-function bar() {
-  return 'bar';
-}
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.Point = undefined;
+
+var _classCallCheck2 = __webpack_require__(1);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Point = exports.Point = function Point(x, y) {
+	(0, _classCallCheck3.default)(this, Point);
+
+	this.x = x;
+	this.y = y;
+};
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers__ = __webpack_require__(0);
 
 
-let elem = document.getElementById('output');
-elem.innerHTML = `Output: ${__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__helpers__["a" /* foo */])()}`;
+exports.__esModule = true;
+
+exports.default = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Point = __webpack_require__(0);
+
+var p = new _Point.Point(10, 10);
+
+var elem = document.getElementById('output');
+
+elem.innerHTML = 'x:' + p.x + ',y:' + p.y;
 
 /***/ })
 /******/ ]);
