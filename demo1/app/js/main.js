@@ -1,7 +1,7 @@
-import { Point } from './Point';
+import { Cat,Dog }  from './animals.js';
 
-let p = new Point(10,10);
+let cat = new Cat();
 
 let elem = document.getElementById('output');
 
-elem.innerHTML = `x:${p.x},y:${p.y}`;
+elem.innerHTML = `It is a ${cat.species}`;
