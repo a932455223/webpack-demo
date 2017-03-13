@@ -1,2 +1,3 @@
 node_modules/
-webpack2-demo
+**/npm-debug.log
+dist
