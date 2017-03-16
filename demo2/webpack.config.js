@@ -3,11 +3,11 @@ let path = require('path');
 
 let config = {
 	entry:{
-		app:__dirname+'/src/js/index.jsx'
+		app:__dirname+'/src/index.jsx'
 	},
 	output:{
 		path:__dirname + '/dist',
-		filename:'js/[name].js'
+		filename:'[name].js'
 	},
 	resolve:{
 		modules: ['node_modules']
@@ -20,7 +20,7 @@ let config = {
         loader: 'babel-loader',
         query: {
       		presets: ["es2015", "react", "stage-0"],
-      		plugins: ["lodash", "transform-runtime", "transform-decorators-legacy", "add-module-exports", ["import", [{ "libraryName": "antd", "style": true }]]]
+      		plugins: ["lodash","transform-runtime", "transform-decorators-legacy", "add-module-exports", ["import", [{ "libraryName": "antd", "style": true }]]]
     		}
 			},{
         test: /\.css?$/,
