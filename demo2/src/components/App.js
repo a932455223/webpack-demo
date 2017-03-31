@@ -6,6 +6,9 @@ const importLazy = (promise) => (
 );
 
 export default class App extends Component{
+    state = {
+        com:false
+    }
     handle = (e) =>{
         require.ensure([],() => {
             let com = require('./Hello');
