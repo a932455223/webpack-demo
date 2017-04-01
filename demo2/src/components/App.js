@@ -1,10 +1,5 @@
 import React,{ Component } from 'react'
 
-
-const importLazy = (promise) => (
-  promise.then((result) => result.default)
-);
-
 export default class App extends Component{
     state = {
         com:false
