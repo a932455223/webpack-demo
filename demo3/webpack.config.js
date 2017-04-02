@@ -20,7 +20,7 @@ let config = {
                         query:{
                             presets:['es2015'],
                             cacheDirectory:true,
-                            plugins:['transform-runtime']
+                            plugins:['transform-runtime','syntax-dynamic-import']
                         }
                     }
                 ]
